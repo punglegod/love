@@ -991,21 +991,27 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    max-width: none;
-  }
-
-  /* 小屏隐藏轮播，恢复默认双列布局 */
+  /* 平板及以下隐藏轮播，恢复简单布局 */
   .hero-main.has-lunbo {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
   }
 
   .hero-main.has-lunbo .hero-lunbo {
     display: none;
   }
 
+  .hero-main.has-lunbo .hero-intro {
+    max-width: none;
+  }
+
   .hero-main.has-lunbo .hero-spotlight {
-    grid-column: 2;
+    grid-column: 1;
+    grid-row: 2;
+    max-width: none;
+  }
+
+  .hero h1 {
+    max-width: none;
   }
 
   .hero-side {
@@ -1055,17 +1061,35 @@ main {
 
   .hero-side {
     grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 
+  .hero-side-card {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .hero-side-card strong {
+    font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+  }
+
+  /* 手机端 hero-main 改为垂直排列 */
   .hero-main {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
-  .hero-spotlight {
+  .hero-main .hero-intro {
     grid-column: 1;
+    grid-row: 1;
+  }
+
+  .hero-main .hero-spotlight {
+    grid-column: 1;
+    grid-row: 2;
     flex-direction: row;
     gap: 0.75rem;
     justify-content: flex-start;
+    align-self: start;
   }
 
   .spotlight-frame {
