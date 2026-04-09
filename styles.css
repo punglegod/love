@@ -1,15 +1,15 @@
 :root {
-  --bg-0: #dbe8f7;
-  --bg-1: #c7d9f0;
-  --bg-2: #bcd2ed;
-  --bg-3: #cde0f5;
-  --ink: #0f1f38;
-  --ink-soft: #4c6486;
+  --bg-0: #e8dff5;
+  --bg-1: #d4c4f0;
+  --bg-2: #c9b5ea;
+  --bg-3: #ddd0f5;
+  --ink: #1a0f2e;
+  --ink-soft: #5c4d7a;
   --glass: rgba(255, 255, 255, 0.42);
   --glass-line: rgba(255, 255, 255, 0.6);
-  --accent: #57a8ff;
-  --accent-2: #8ce7ff;
-  --shadow: 0 20px 60px rgba(26, 49, 92, 0.18);
+  --accent: #a78bfa;
+  --accent-2: #c4b5fd;
+  --shadow: 0 20px 60px rgba(42, 26, 92, 0.18);
   --radius-xl: 30px;
   --radius-md: 18px;
 }
@@ -26,8 +26,8 @@ body {
   font-family: "Manrope", "PingFang SC", "Helvetica Neue", sans-serif;
   background:
     radial-gradient(circle at 12% 9%, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0) 40%),
-    radial-gradient(circle at 86% 11%, rgba(177, 219, 255, 0.44), rgba(177, 219, 255, 0) 34%),
-    radial-gradient(circle at 54% 76%, rgba(201, 176, 255, 0.22), rgba(201, 176, 255, 0) 40%),
+    radial-gradient(circle at 86% 11%, rgba(200, 170, 255, 0.44), rgba(200, 170, 255, 0) 34%),
+    radial-gradient(circle at 54% 76%, rgba(230, 180, 255, 0.22), rgba(230, 180, 255, 0) 40%),
     linear-gradient(160deg, var(--bg-0) 0%, var(--bg-1) 42%, var(--bg-2) 76%, var(--bg-3) 100%);
 }
 
@@ -63,8 +63,8 @@ p {
   inset: -16%;
   background:
     radial-gradient(circle at 20% 22%, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 35%),
-    radial-gradient(circle at 78% 30%, rgba(176, 218, 255, 0.36), rgba(176, 218, 255, 0) 40%),
-    radial-gradient(circle at 48% 86%, rgba(164, 190, 230, 0.26), rgba(164, 190, 230, 0) 44%);
+    radial-gradient(circle at 78% 30%, rgba(200, 175, 255, 0.36), rgba(200, 175, 255, 0) 40%),
+    radial-gradient(circle at 48% 86%, rgba(190, 160, 240, 0.26), rgba(190, 160, 240, 0) 44%);
   filter: blur(40px) saturate(115%);
   opacity: 0.9;
 }
@@ -75,10 +75,10 @@ p {
   inset: -22%;
   background: conic-gradient(
     from 32deg at 72% 34%,
-    rgba(165, 214, 255, 0.24),
-    rgba(196, 183, 255, 0.16),
-    rgba(151, 228, 220, 0.16),
-    rgba(165, 214, 255, 0.24)
+    rgba(200, 175, 255, 0.24),
+    rgba(220, 180, 255, 0.16),
+    rgba(185, 200, 230, 0.16),
+    rgba(200, 175, 255, 0.24)
   );
   filter: blur(60px) saturate(118%);
   opacity: 0.62;
@@ -95,7 +95,7 @@ p {
 .blob-a {
   width: 35vw;
   height: 35vw;
-  background: radial-gradient(circle at 30% 30%, #c9f1ff, #8acbff);
+  background: radial-gradient(circle at 30% 30%, #e8d5ff, #c9a8ff);
   top: -8vw;
   right: 8vw;
 }
@@ -103,7 +103,7 @@ p {
 .blob-b {
   width: 30vw;
   height: 30vw;
-  background: radial-gradient(circle at 30% 30%, #e2d9ff, #9ec3ff);
+  background: radial-gradient(circle at 30% 30%, #f0e0ff, #d4b8ff);
   left: -6vw;
   bottom: -5vw;
   animation-delay: -6s;
@@ -112,7 +112,7 @@ p {
 .blob-c {
   width: 18vw;
   height: 18vw;
-  background: radial-gradient(circle at 30% 30%, #bdf8ed, #8db9ff);
+  background: radial-gradient(circle at 30% 30%, #e0d0f8, #c8a8ff);
   left: 42vw;
   top: 20vh;
   animation-delay: -2s;
