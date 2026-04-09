@@ -1106,66 +1106,107 @@ main {
     display: none;
   }
 
-  /* 手机端 hero-side 与 hero-main 分开布局 */
-  .hero-side {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    margin-top: 0.8rem;
+  /* 手机端重新设计 hero 布局 */
+  .hero {
+    padding: 1rem 0.8rem;
   }
 
-  .hero-side-card {
-    padding: 0.65rem 0.75rem;
+  .hero-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  .hero-side-card strong {
-    font-size: clamp(0.95rem, 3.5vw, 1.2rem);
-  }
-
-  .hero-side-card span {
-    font-size: 0.72rem;
-  }
-
-  .hero-side-card small {
-    font-size: 0.72rem;
-  }
-
-  .hero-chip-cloud {
-    gap: 0.35rem;
-  }
-
-  .hero-place-chip {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
-  }
-
-  /* 手机端 hero-main 改为垂直排列 */
+  /* 标题和精选回忆区域 */
   .hero-main {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
   }
 
-  .hero-main .hero-intro {
-    grid-column: 1;
-    grid-row: 1;
+  .hero-intro {
+    order: 1;
   }
 
-  .hero-main .hero-spotlight {
-    grid-column: 1;
-    grid-row: 2;
+  .hero-intro .eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.3rem, 6vw, 1.8rem);
+    line-height: 1.25;
+    margin: 0.3rem 0 0;
+  }
+
+  /* 精选回忆横向布局 */
+  .hero-spotlight {
+    order: 2;
+    display: flex;
     flex-direction: row;
-    gap: 0.75rem;
-    justify-content: flex-start;
-    align-self: start;
+    align-items: center;
+    gap: 0.6rem;
+    max-width: none;
   }
 
   .spotlight-frame {
-    width: 100px;
+    width: 80px;
+    height: 80px;
     flex-shrink: 0;
   }
 
   .hero-spotlight figcaption {
     text-align: left;
     max-width: none;
+  }
+
+  .spotlight-caption-title {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .spotlight-caption-date {
+    font-size: 0.7rem;
+  }
+
+  /* 统计卡片区域 */
+  .hero-side {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0;
+  }
+
+  .hero-side-card {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .hero-side-card span {
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-side-card strong {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    margin: 0.2rem 0;
+  }
+
+  .hero-side-card small {
+    font-size: 0.68rem;
+    opacity: 0.85;
+  }
+
+  /* 足迹标签云 */
+  .hero-chip-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .hero-place-chip {
+    font-size: 0.68rem;
+    padding: 0.25rem 0.55rem;
   }
 
   .compare-card img {
