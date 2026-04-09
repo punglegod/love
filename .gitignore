@@ -1,0 +1,14 @@
+# 自动生成文件
+data/photos.js
+data/lunbo.js
+
+# Qoder 缓存
+.qoder/
+
+# 照片资源（体积大，按需自行上传）
+assets/photos/
+assets/lunbo/
+
+# 其他
+.DS_Store
+*.log

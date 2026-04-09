@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我们的时间潮汐</title>
+    <meta
+      name="description"
+      content="苹果风格液态玻璃恋爱纪念站：500 张照片不是陈列，而是一段可游走的时间潮汐。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="blob blob-c"></span>
+      <span class="grain"></span>
+    </div>
+
+    <header class="glass nav-shell">
+      <div class="brand">LOVE ARCHIVE</div>
+      <nav id="filterNav" aria-label="城市足迹筛选"></nav>
+      <button id="storyToggle" class="story-btn">自动叙事</button>
+    </header>
+
+    <main>
+      <section class="hero glass">
+        <div class="hero-layout">
+          <div class="hero-main">
+            <div class="hero-intro">
+              <p class="eyebrow">Liquid Glass Memory Experience</p>
+              <h1>我们不是在翻相册，<br />而是在穿越时间。</h1>
+            </div>
+            <!-- 首页轮播 -->
+            <div class="hero-lunbo" id="heroLunbo" aria-label="精选轮播">
+              <button class="lunbo-arrow lunbo-prev" id="lunboPrev" type="button" aria-label="上一张">
+                <svg width="9" height="15" viewBox="0 0 9 15" fill="none"><path d="M7.5 1.5L1.5 7.5l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="lunbo-arrow lunbo-next" id="lunboNext" type="button" aria-label="下一张">
+                <svg width="9" height="15" viewBox="0 0 9 15" fill="none"><path d="M1.5 1.5l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="lunbo-dots" id="lunboDots"></div>
+            </div>
+
+            <figure class="hero-spotlight" id="heroSpotlight" role="button" tabindex="0" aria-label="精选回忆">
+              <div class="spotlight-frame">
+                <img id="spotlightImg" alt="精选回忆" />
+                <span class="spotlight-badge">精选回忆</span>
+              </div>
+              <figcaption>
+                <strong id="spotlightTitle">--</strong>
+                <small id="spotlightDate">--</small>
+              </figcaption>
+            </figure>
+            <div class="hero-meta">
+              <article>
+                <span>在一起</span>
+                <strong id="daysTogether">0</strong>
+                <small>天</small>
+                <div class="live-clock" id="liveClock">
+                  <span class="clock-digit" id="clockH">00</span>
+                  <em>:</em>
+                  <span class="clock-digit" id="clockM">00</span>
+                  <em>:</em>
+                  <span class="clock-digit" id="clockS">00</span>
+                </div>
+              </article>
+              <article>
+                <span>照片总数</span>
+                <strong id="photoCount">0</strong>
+                <small>张</small>
+              </article>
+              <article>
+                <span>城市足迹</span>
+                <strong id="placeCount">0</strong>
+                <small>座</small>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-side" aria-label="记忆摘要">
+            <article class="hero-side-card">
+              <span>最近记录</span>
+              <strong id="latestStamp">--</strong>
+              <small id="latestPlace">--</small>
+            </article>
+            <article class="hero-side-card">
+              <span>足迹热度</span>
+              <div id="heroTopPlaces" class="hero-chip-cloud"></div>
+            </article>
+            <article class="hero-side-card">
+              <span>时间跨度</span>
+              <strong id="memorySpan">--</strong>
+              <small>第一张到最新一张</small>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="experience">
+        <div class="experience-head">
+          <h2>时间潮汐</h2>
+          <p>
+            横向游走这条“记忆河道”。每一张照片都按时间和情绪落位，形成会呼吸的液态玻璃地貌。
+          </p>
+        </div>
+
+        <div class="river-shell glass">
+          <div class="progress">
+            <span id="progressText">0%</span>
+          </div>
+          <div id="river" class="river" aria-label="恋爱时间潮汐">
+            <svg id="track" class="track" preserveAspectRatio="none"></svg>
+            <div id="cardLayer" class="card-layer"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compare glass">
+        <span class="compare-refraction" aria-hidden="true"></span>
+        <div>
+          <h3>随机时空对照</h3>
+          <p>一键抽取两张相隔最远的照片，看到你们关系的变化轨迹。</p>
+        </div>
+        <button id="compareBtn" class="story-btn">抽一组</button>
+        <div id="comparePanel" class="compare-panel" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <dialog id="photoModal" class="modal glass">
+      <button id="closeModal" class="close-btn" aria-label="关闭">✕</button>
+      <img id="modalImage" alt="回忆照片" />
+      <div class="modal-copy">
+        <p id="modalDate"></p>
+        <h4 id="modalTitle"></h4>
+      </div>
+    </dialog>
+
+    <script src="data/config.js"></script>
+    <script src="data/photos.js"></script>
+    <script src="data/lunbo.js"></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>

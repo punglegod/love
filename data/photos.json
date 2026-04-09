@@ -1,0 +1,66 @@
+[
+  {
+    "id": "sample-1",
+    "src": "https://picsum.photos/seed/first-memory/840/1120",
+    "title": "第一次正式约会",
+    "date": "2022-05-25",
+    "note": "那天其实有点紧张，但很确定你很特别。",
+    "phase": "first"
+  },
+  {
+    "id": "sample-2",
+    "src": "https://picsum.photos/seed/night-walk/840/1120",
+    "title": "晚饭后的散步",
+    "date": "2022-07-18",
+    "note": "路灯下你讲了很多小时候的故事。",
+    "phase": "first"
+  },
+  {
+    "id": "sample-3",
+    "src": "https://picsum.photos/seed/first-trip/840/1120",
+    "title": "第一次短途旅行",
+    "date": "2022-11-02",
+    "note": "我们开始有了共同的旅行清单。",
+    "phase": "warm"
+  },
+  {
+    "id": "sample-4",
+    "src": "https://picsum.photos/seed/cafe-day/840/1120",
+    "title": "雨天咖啡馆",
+    "date": "2023-03-11",
+    "note": "外面下雨，里面很安静。",
+    "phase": "warm"
+  },
+  {
+    "id": "sample-5",
+    "src": "https://picsum.photos/seed/birthday-party/840/1120",
+    "title": "你的生日",
+    "date": "2023-09-26",
+    "note": "把愿望吹灭的时候你看着我笑。",
+    "phase": "deep"
+  },
+  {
+    "id": "sample-6",
+    "src": "https://picsum.photos/seed/sea-trip/840/1120",
+    "title": "海边傍晚",
+    "date": "2024-05-20",
+    "note": "这张照片之后我们去看了很久的海。",
+    "phase": "deep"
+  },
+  {
+    "id": "sample-7",
+    "src": "https://picsum.photos/seed/museum/840/1120",
+    "title": "逛展的一天",
+    "date": "2025-01-14",
+    "note": "你说以后每年都要一起看一场展。",
+    "phase": "now"
+  },
+  {
+    "id": "sample-8",
+    "src": "https://picsum.photos/seed/today-memory/840/1120",
+    "title": "今天",
+    "date": "2026-03-29",
+    "note": "普通的一天，依旧很喜欢你。",
+    "phase": "now"
+  }
+]
